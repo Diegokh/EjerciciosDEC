@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Alta Socios Gimnasio</title>
+</head>
+<body>
+
+<h2>Alta de Socios</h2>
+
+<form id="socioGym">
+
+    <label>DNI:</label>
+    <input type="text" id="dni" placeholder="00000000-A">
+    <div id="error-dni"></div>
+
+    <label>Nombre:</label>
+    <input type="text" id="nombre">
+    <div id="error-nombre"></div>
+
+    <label>Apellidos:</label>
+    <input type="text" id="apellidos">
+    <div id="error-apellidos"></div>
+
+    <label>Dirección:</label>
+    <input type="text" id="direccion">
+    <div id="error-direccion"></div>
+
+    <label>Email:</label>
+    <input type="text" id="email">
+    <div id="error-email"></div>
+
+    <label>Sexo:</label>
+    <input type="radio" name="sexo" value="H"> Hombre
+    <input type="radio" name="sexo" value="M"> Mujer
+    <div id="error-sexo"></div>
+
+    <label>Teléfono:</label>
+    <input type="text" id="telefono">
+    <div id="error-telefono"></div>
+
+    <label>Fecha Alta:</label>
+    <input type="date" id="alta">
+    <div id="error-alta"></div>
+
+    <label>Provincia:</label>
+    <select id="provincia">
+        <option value="">-Provincia-</option>
+        <option value="1">Almería</option>
+        <option value="2">Granada</option>
+        <option value="3">Sevilla</option>
+    </select>
+    <div id="error-provincia"></div>
+
+    <label>Fecha Nacimiento:</label>
+    <input type="date" id="nacimiento">
+    <div id="error-nacimiento"></div>
+
+    <label>Edad:</label>
+    <input type="text" id="edad" disabled>
+
+    <label>Deporte:</label>
+    <select id="deporte">
+        <option value="">-Deporte-</option>
+    </select>
+    <div id="error-deporte"></div>
+
+    <br><br>
+    <button type="submit">Grabar</button>
+    <button type="button" id="limpiar">Limpiar</button>
+    <button type="button" id="socios">Socios</button>
+    <button type="button" id="estadisticas">Estadísticas</button>
+
+</form>
+
+<script src="scripts/Funciones.js"></script>
+<script src="scripts/Gimnasio.js"></script>
+<script src="scripts/Validaciones.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>
