@@ -8,8 +8,76 @@
 <body>
     
 
-    <h1>Gimnasio BodyXtreme Pantta Firmaker Muscle Factory</h1>
+    <h1>Gimnasio BodyXtreme Panatta Firmaker Muscle Factory</h1>
 
-    
+    <form id="form">
+        <label for="usuario">Usuario: </label>
+        <input id="usuario" name="usuario" type="text">
+        <p id="error-usuario"></p>
+
+        <br>
+        <br>
+
+        <label for="password">Contraseña: </label>
+        <input id="password" name="password" type="password">
+        <p id="error-password"></p>
+
+        <br>
+        <br>
+
+        <h3>¿Eres afiliado?</h3>
+
+        <label for="si">SI</label>
+        <input id="si" type="radio" name="afiliado" value="si">
+
+        <br>
+
+        <label for="no">NO</label>
+        <input id="no" type="radio" name="afiliado" value="no">
+
+         <p id="error-afiliado"></p>
+
+        <br>
+        <br>
+
+        <select id="deporte">
+            <option value="">-- Selecciona deporte --</option>
+            <option value="musculacion">Musculación</option>
+            <option value="crossfit">Crossfit</option>
+            <option value="padel">Pádel</option>
+        </select>
+
+         <p id="error-deporte"></p>
+
+        <br>
+        <br>
+
+        <div>
+            <label for="box1">Pase medio dia</label>
+            <input type="checkbox" name="tipoSocio" id="box1" value="med">
+            <p></p>
+
+            <br>
+
+            <label for="box2">Pase nocturno</label>
+            <input type="checkbox" name="tipoSocio" id="box2" value="noc">
+
+            <br>
+
+            <label for="box3">Pase completo</label>
+            <input type="checkbox" name="tipoSocio" id="box3" value="com">
+        </div>
+
+         <p id="error-pase"></p>
+
+        <br>
+        <br>
+
+        <button id="btnReg" type="submit">Registrarme</button>
+
+        
+    </form>
+
+    <script src="js.js"></script>
 </body>
 </html>
