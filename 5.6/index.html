@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Matriculación Alumnos SMR</title>
+</head>
+<body>
+
+    <h1>Matriculación Alumnos SMR</h1>
+
+    <form id="formAlumno">
+
+        <!-- DNI -->
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" placeholder="99.999.999-X">
+        <p id="error-dni" style="color:red;"></p>
+
+        <br>
+
+        <!-- Nombre -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre">
+        <p id="error-nombre" style="color:red;"></p>
+
+        <br>
+
+        <!-- Dirección -->
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion">
+        <p id="error-direccion" style="color:red;"></p>
+
+        <br>
+
+        <!-- Curso -->
+        <label for="curso">Curso:</label>
+        <select id="curso">
+            <option value="">-- Selecciona curso --</option>
+            <option value="1SMR">1º SMR</option>
+            <option value="2SMR">2º SMR</option>
+        </select>
+        <p id="error-curso" style="color:red;"></p>
+
+        <br>
+
+        <!-- Edad -->
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad">
+        <p id="error-edad" style="color:red;"></p>
+
+        <br>
+
+        <!-- Módulo -->
+        <label for="modulo">Módulo:</label>
+        <select id="modulo">
+            <option value="">-- Selecciona módulo --</option>
+        </select>
+        <p id="error-modulo" style="color:red;"></p>
+
+        <br>
+
+        <!-- Repite Curso -->
+        <label>Repite curso:</label>
+        <input type="checkbox" id="repite" value="si">
+        <label for="repite">Sí</label>
+        <p id="error-repite" style="color:red;"></p>
+
+        <br>
+
+        <!-- Fecha -->
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha">
+        <p id="error-fecha" style="color:red;"></p>
+
+        <br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="ejemplo@correo.com">
+        <p id="error-email" style="color:red;"></p>
+
+        <br><br>
+
+        <!-- BOTONES -->
+
+        <button type="button" id="btnLimpiar">Limpiar</button>
+        <button type="submit" id="btnGrabar">Grabar</button>
+        <button type="button" id="btnMostrar">Alumnos Matriculados</button>
+        <button type="button" id="btn1SMR">Alumnos 1º SMR</button>
+        <button type="button" id="btnMayor">Alumno Mayor</button>
+
+    </form>
+
+    <script src="js.js"></script>
+
+</body>
+</html>
