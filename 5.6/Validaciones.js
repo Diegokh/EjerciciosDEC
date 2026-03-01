@@ -19,20 +19,18 @@ function checkRequired(objeto) {
       valido = validarDni();   
       break;
     case "email":
-      // CORRECCIÓN: Se pasa el .value en lugar del objeto HTML
       valido = validarEmail(objeto.value);
       break;
   }
 
   if (!valido) {
     objeto.style.border = "2px solid red";
-    // Si es un email inválido (pero no vacío), mostramos el mensaje
     if (objeto.id === "email") {
         error.innerHTML = "Formato de email incorrecto";
     }
   } else {
     objeto.style.border = "";
-    error.innerHTML = ""; // Limpiar errores si es válido
+    error.innerHTML = ""; 
   }
 
   return valido; 
