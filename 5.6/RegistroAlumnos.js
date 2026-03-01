@@ -1,4 +1,4 @@
-class Alumnos{
+class RegistroAlumnos{
     constructor(){
         this._alumnos = []
     }
@@ -10,21 +10,23 @@ class Alumnos{
     //agregar alumno comprobando si existe
 
     agregarAlumno(alumno){
-        for(let i = 0; i < this._alumnos.length ; i++){
 
-            //compruebo si existe
-            if(this._alumnos[i] === alumno.dni){
-                alert("El dni ya esta vinculado a un alumno")
-            }
+    for(let i = 0; i < this._alumnos.length ; i++){
 
-            if(this._alumnos[i] === alumno.email){
-                alert("El email ya esta vinculado a un alumno")
-            }
+        if(this._alumnos[i].dni === alumno.dni){
+            alert("El dni ya esta vinculado a un alumno");
+            return false;
+        }
+
+        if(this._alumnos[i].email === alumno.email){
+            alert("El email ya esta vinculado a un alumno");
+            return false;
+        }
     }
 
-    this.alumnos.push(alumno)
-        
-    }
+    this._alumnos.push(alumno);
+    return true;
+}
 
     getAlumnos1SMR(){
         const alumnos1 = []
@@ -46,7 +48,7 @@ class Alumnos{
 
         for(let i = 1; i < this._alumnos.length; i++){
             if(this._alumnos[i].edad > mayor.edad){
-                mayor = this._this[i]
+                mayor = this._alumnos[i]
             }
         }
 

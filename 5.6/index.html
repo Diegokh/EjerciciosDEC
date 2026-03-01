@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Matriculación Alumnos SMR</title>
 </head>
+
 <body>
 
     <h1>Matriculación Alumnos SMR</h1>
@@ -60,8 +62,10 @@
 
         <!-- Repite Curso -->
         <label>Repite curso:</label>
-        <input type="checkbox" id="repite" value="si">
-        <label for="repite">Sí</label>
+        <input type="radio" name="repite" id="repiteSi" value="si">
+        <label for="repiteSi">Sí</label>
+        <input type="radio" name="repite" id="repiteNo" value="no" checked>
+        <label for="repiteNo">No</label>
         <p id="error-repite" style="color:red;"></p>
 
         <br>
@@ -90,7 +94,10 @@
 
     </form>
 
-    <script src="js.js"></script>
+    <script src="RegistroAlumnos.js"></script>
+    <script src="Validaciones.js"></script>
+    <script src="Main.js"></script>
 
 </body>
+
 </html>
