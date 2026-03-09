@@ -1,0 +1,12 @@
+#rectangulo {
+    width: 150px;
+    height: 100px;
+    background-color: orange;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+}
