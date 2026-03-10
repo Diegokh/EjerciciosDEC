@@ -24,12 +24,22 @@ function validar(){
         num1.style.backgroundColor = 'red'
         error.innerHTML += 'Debes ingresar un valor en num1'
         return false
+    }else if(isNaN(num1.value.trim())){
+        num1.focus()
+        num1.style.backgroundColor = 'red'
+        error.innerHTML += 'Debes ingresar un valor numerico en num1'
+        return false
     }
 
     if(num2.value.trim() == ''){
         num2.focus()
         num2.style.backgroundColor = 'red'
         error.innerHTML += 'Debes ingresar un valor en num2'
+        return false
+    }else if(isNaN(num2.value.trim())){
+        num2.focus()
+        num2.style.backgroundColor = 'red'
+        error.innerHTML += 'Debes ingresar un valor numerico en num2'
         return false
     }
 
@@ -46,5 +56,19 @@ function operar(operacion){
     if(operacion === 'x') res = n1 * n2 
     if(operacion === '/') res = n1 / n2
 
-
+    resultado.innerHTML = `El resultado de la operacion es ${res}`
 }
+
+btnSuma.addEventListener('click' , function(){operar('+')})
+btnResta.addEventListener('click', function(){operar('-')})
+btnMult.addEventListener('click',function(){operar('x')})
+btnDiv.addEventListener('click',function(){operar('/')})
+btnBorrar.addEventListener('click',function(){
+    num1.value = ''
+    num2.value = ''
+    resultado.value = ''
+    error.innerHTML = ''
+    num1.style.backgroundColor = ''
+    num2.style.backgroundColor = ''
+    num1.focus()
+})
