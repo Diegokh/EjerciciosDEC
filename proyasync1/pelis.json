@@ -1,0 +1,46 @@
+[
+    {
+        "titulo": "Titanic",
+        "genero": "Romance"
+    },
+    {
+        "titulo": "Avatar",
+        "genero": "Ciencia ficción"
+    },
+    {
+        "titulo": "The Matrix",
+        "genero": "Ciencia ficción"
+    },
+    {
+        "titulo": "Gladiator",
+        "genero": "Acción"
+    },
+    {
+        "titulo": "The Godfather",
+        "genero": "Drama"
+    },
+    {
+        "titulo": "Jurassic Park",
+        "genero": "Aventura"
+    },
+    {
+        "titulo": "The Dark Knight",
+        "genero": "Acción"
+    },
+    {
+        "titulo": "Forrest Gump",
+        "genero": "Drama"
+    },
+    {
+        "titulo": "Toy Story",
+        "genero": "Animación"
+    },
+    {
+        "titulo": "Inception",
+        "genero": "Ciencia ficción"
+    },
+    {
+        "titulo": "Battelship",
+        "genero": "Ciencia ficción"
+    }
+]
